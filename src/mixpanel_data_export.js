@@ -92,6 +92,10 @@ var MixpanelExport = (function() {
     return this.get(["segmentation", "average"], parameters, callback);
   };
 
+  MixpanelExport.prototype.multiSegmentation = function(parameters, callback) {
+    return this.get(["segmentation", "mulitseg"], parameters, callback);
+  };
+
   MixpanelExport.prototype.retention = function(parameters, callback) {
     return this.get(["retention"], parameters, callback);
   };
